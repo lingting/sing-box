@@ -1,4 +1,4 @@
-package ruls
+package rules
 
 import (
 	"bufio"

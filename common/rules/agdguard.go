@@ -27,7 +27,7 @@ type agdguardRuleLine struct {
 	isImportant bool
 }
 
-func Convert(reader io.Reader) ([]option.HeadlessRule, error) {
+func FromAgdguard(reader io.Reader) ([]option.HeadlessRule, error) {
 	scanner := bufio.NewScanner(reader)
 	var (
 		ruleLines    []agdguardRuleLine

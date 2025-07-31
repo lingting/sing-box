@@ -7,5 +7,5 @@ import (
 )
 
 func Convert(reader io.Reader) ([]option.HeadlessRule, error) {
-	return rules.Convert(reader)
+	return rules.FromAgdguard(reader)
 }
